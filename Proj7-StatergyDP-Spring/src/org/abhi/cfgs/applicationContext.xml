@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+	<!-- cfgs all dependent class objs -->
+	<bean id="dtdc" class="org.abhi.comp.DTDC"/>
+	<bean id="fFlight" class="org.abhi.comp.FirstFlight"/>
+	<bean id="dhl" class="org.abhi.comp.DHL"/>
+	<bean id="bDart" class="org.abhi.comp.BlueDart"/>
+	
+	<!-- cfgs target class objects -->
+	<bean id="fpkt1" class="org.abhi.comp.Flipkart">
+		<property name="courier" ref="fFlight"/>
+		<constructor-arg name="courier" ref="dhl"/>
+	</bean>
+</beans>
