@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	
+	<!-- configure Spring bean -->
+		<bean id="stud" class="org.abhi.comp.Student">
+		 	<constructor-arg value="1001"/>
+			<constructor-arg value="Ramesh"/>
+			<constructor-arg value="DLI"/>
+			<constructor-arg value="79.56f"/>   
+			
+			<property name="sno" value="9001"/>
+			<property name="sname" value="raja"/>
+			<property name="sadd" value="Noida"/>
+			<property name="avg" value="9001"/>
+			
+		</bean>
+	
+	
+	
+</beans>
