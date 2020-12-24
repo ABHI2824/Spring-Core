@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans https://www.springframework.org/schema/beans/spring-beans-4.3.xsd">
+	
+	<bean id="mk" class="org.abhi.beans.Marks">
+		<constructor-arg index="2" value="87"/>
+		<constructor-arg index="0" value="78"/>
+		<constructor-arg index="1" value="65"/>
+	</bean>
+
+	<bean id="emp" class="org.abhi.beans.Employee">
+		<constructor-arg value="Raja" type="java.lang.String"/>
+		<constructor-arg value="1001" type="int"/>
+		<constructor-arg value="98524.0f" type="float" index="2" name="salary"/>
+	</bean>
+	
+	<bean id="st" class="org.abhi.beans.Student">
+		<constructor-arg name="total" value="270"/>
+		<constructor-arg name="sno" value="101"/>
+		<constructor-arg name="sname" value="Rahul"/>
+		<constructor-arg name="sadd" value="delhi"/>
+	</bean>
+</beans>
